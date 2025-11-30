@@ -1,0 +1,115 @@
+.container {
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.successBox {
+  background: #1a2a1a;
+  border: 1px solid #44ff44;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  color: #66ff66;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkIcon {
+  flex-shrink: 0;
+}
+
+.codeBox {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.codeLabel {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.code {
+  font-size: 32px;
+  font-weight: 700;
+  color: #a855f7;
+  letter-spacing: 4px;
+  font-family: monospace;
+}
+
+.copyBtn {
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #a855f7;
+  border-radius: 8px;
+  padding: 14px;
+  color: #a855f7;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  transition: all 0.2s;
+}
+
+.copyBtn:hover {
+  background: #a855f7;
+  color: #fff;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.detailItem {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.detailIcon {
+  color: #a855f7;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.detailLabel {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.detailValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.shareText {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  line-height: 1.5;
+}
