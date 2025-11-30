@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: letsqueue-backend
+    env: python
+    region: singapore
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn LetsQueue.wsgi:application"
+    plan: free
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: letsqueue-backend.onrender.com
+      - key: DATABASE_URL
+        fromDatabase:
+          name: letsqueue-db
+          property: connectionString
+      - key: CORS_ORIGINS
+        value: https://your-react-domain.com
+databases:
+  - name: letsqueue-db
+    plan: free
