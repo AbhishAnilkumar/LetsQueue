@@ -3,9 +3,10 @@ services:
     name: letsqueue-backend
     env: python
     region: singapore
-    buildCommand: "./build.sh"
-    startCommand: "gunicorn LetsQueue.wsgi:application"
     plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn LetsQueue.wsgi:application --log-file -"
+    autoDeploy: true
     envVars:
       - key: DEBUG
         value: False
@@ -19,6 +20,7 @@ services:
           property: connectionString
       - key: CORS_ORIGINS
         value: https://your-react-domain.com
+
 databases:
   - name: letsqueue-db
     plan: free
