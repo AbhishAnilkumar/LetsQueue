@@ -19,8 +19,8 @@ services:
           name: letsqueue-db
           property: connectionString
       - key: CORS_ORIGINS
-        value: https://your-react-domain.com
+        value: https://lets-queue-3u0myh9s8-abhishs-projects.vercel.app/
 
 databases:
-  - name: postgresql://letsqueue_db_g0q9_user:AJaKatjeENExOf8xAAZY3n4X4MaPtPkj@dpg-d4maktq4d50c73eh4cmg-a/letsqueue_db_g0q9 
+  - name: letsqueue-db
     plan: free
