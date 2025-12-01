@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8000/api", 
+  baseURL: "https://letsqueue-backend-s0g8.onrender.com/", 
 });
 
 let anonId = localStorage.getItem("anon_token");

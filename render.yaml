@@ -22,5 +22,5 @@ services:
         value: https://your-react-domain.com
 
 databases:
-  - name: letsqueue-db
+  - name: postgresql://letsqueue_db_g0q9_user:AJaKatjeENExOf8xAAZY3n4X4MaPtPkj@dpg-d4maktq4d50c73eh4cmg-a/letsqueue_db_g0q9 
     plan: free
