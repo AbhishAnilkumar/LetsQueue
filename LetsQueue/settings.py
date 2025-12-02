@@ -27,6 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
 
+if not DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = True 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost').split(',') 
